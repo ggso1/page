@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spline Horizontal Infinite Scroll</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="animation-wrapper">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.22/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/9IhE6NqRy0vnbtDm/scene.splinecode"></spline-viewer>
+
+  <div class="scroll-container" id="scrollContainer">
+    <section class="section" id="videoSection">
+      <div class="animation-wrapper">
+        <video src="/Earth.mp4" autoplay muted loop playsinline></video>
+        <div class="video-title">
+          <h1>Voyage Through Space</h1>
+          <p>Подорож космосом</p>
         </div>
-    </div>
-    <div>
-        <h1>Welcome to the Page</h1>
-        <p>This is a sample page with a 3D animation embedded using Spline.</p>
-    </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="scroll.js"></script>
 </body>
-<script src="scroll.js"></script>
 </html>
